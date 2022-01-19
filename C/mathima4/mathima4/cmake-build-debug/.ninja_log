@@ -1,0 +1,16 @@
+# ninja log v5
+2	117	6643163977321226	CMakeFiles/mathima4.dir/main.c.obj	1d8aa95f05eaa12a
+164	380	6643232357593708	mathima4.exe	41a1530e59dab8ac
+2	136	6643191416607848	CMakeFiles/mathima4.dir/struct2.c.obj	41d44a21ac519278
+2	213	6643198043826021	CMakeFiles/mathima4.dir/struct3.c.obj	c6ee5400cda3573d
+9	171	6643206911158066	CMakeFiles/mathima4.dir/struct4.c.obj	9ced9a4382c004b6
+6	170	6643213805735826	CMakeFiles/mathima4.dir/struct5.c.obj	800245bfe6304bc6
+2	164	6643232355565552	CMakeFiles/mathima4.dir/struct6.c.obj	a55a21befcbac24b
+7	152	6643232355465595	CMakeFiles/mathima4.dir/struct7.c.obj	e6d1986e2048c2ce
+7	171	6643251234769961	CMakeFiles/mathima4.dir/struct8.c.obj	f0f0289b449fc29d
+3	172	6643251234740052	CMakeFiles/mathima4.dir/struct7.c.obj	e6d1986e2048c2ce
+174	378	6643251236821792	mathima4.exe	9816d8e7ce234457
+3	153	6643251566658676	CMakeFiles/mathima4.dir/struct8.c.obj	f0f0289b449fc29d
+154	335	6643251568490767	mathima4.exe	9816d8e7ce234457
+3	133	6643251740841861	CMakeFiles/mathima4.dir/struct8.c.obj	f0f0289b449fc29d
+133	293	6643251742375063	mathima4.exe	9816d8e7ce234457

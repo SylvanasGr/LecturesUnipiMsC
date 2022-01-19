@@ -1,0 +1,3 @@
+F:/Dropbox/clion/mathima4/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/Dropbox/clion/mathima4/cmake-build-debug/CMakeFiles/mathima4.dir
+F:/Dropbox/clion/mathima4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
