@@ -83,6 +83,90 @@ internal_product1([H1|T1], [H2|T2], X) :-
 internal_product2(L1, L2, R) :-
 	mul(L1, L2, L3), sumlist(L3, R).
 
+/* first_element(List,First) 			*/
+/* ?- first_element([1,2,3,4],X).		*/
+/* X=1					*/
+
+    first_element([X|Y], X).
+
+/* last_element(List,First) 			*/
+/* ?- last_element([1,2,3,4],X).		*/
+/* X=4					*/
+
+last_element([X],X).
+last_element([X|Y],Z) :- 
+	write(X), write(" "),write(Y),nl,
+	last_element(Y,Z).
+/*
+         [1,2,3,4]
+[X|Y] = [1,2,3,4] => X=1, Y=[2,3,4]
+*/
+
+/*************************************/
+/* add_list(List, S) 		*/
+/* ?- add_list([1,2,5,7],S).		*/
+/* S=15				*/
+/*************************************/
+% Sxolio mias grammis
+
+add_list([X],X) :- 
+	write("Terma "),
+	write("X="),write(X),write(" "),nl.
+add_list([X|Y],S) :-
+	write("X="),write(X), write(" "), 
+	write("Y="),write(Y), write(" "), nl,
+	add_list(Y,K),
+	write("K="),write(K), write(" "),nl,
+	S is X+K,
+	write("S="),write(S), write(" ").
+
+add_list2([X],X).
+add_list2([X|Y],S) :- add_list2(Y,K), S is X+K.
+
+
+p(a).
+p(b).
+q(X) :- r(X).
+r(b).
+r(a).
+s(X,Y) :- p(X), q(Y).
+
+/*
+?- s(X,Y).
+
+*/
+
+/* A is member of the list [A|Tail] because it is 	*/
+/* the first element of the list [A|Tail] 	*/
+mymember1(A,[A|Tail]).
+mymember1(A,[Head|Tail]) :- mymember1(A,Tail).
+
+
+mymember2(A,[Head|Tail]) :- 
+	A = Head; mymember2(A,Tail).
+
+/* nth_element(List, N, Element) */
+/* List, N : input, Element : output */
+
+nth_element([Head|Tail], 1, Head).
+nth_element([Head|Tail], N, E) :- 
+	M is N-1,
+	nth_element(Tail, M, E).
+
+/* element_position(List, Element, N) */
+/* List, Element : input, N : output */
+
+element_position([Head|Tail], Head, 1).
+element_position([Head|Tail], E, N) :- 
+	element_position(Tail, E, M),
+	N is M+1.
+
+
+
+
+
+
+
 
 
 
