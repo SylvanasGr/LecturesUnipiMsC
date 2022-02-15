@@ -15,6 +15,9 @@ edge(f,i).
 	...,
 	reln(atn1,...).
 */
+loves(romeo,julieta).
+loves(julieta,romeo) :- loves(romeo,julieta).
+
 connected(X,Y) :- edge(X,Y).
 connected(X,W) :- 
 	edge(X,Y),
@@ -92,7 +95,9 @@ internal_product2(L1, L2, R) :-
 /* last_element(List,First) 			*/
 /* ?- last_element([1,2,3,4],X).		*/
 /* X=4					*/
-
+# last_element([X],X).
+# last_element([_|T],X):-
+# 	last_element(T,X).
 last_element([X],X).
 last_element([X|Y],Z) :- 
 	write(X), write(" "),write(Y),nl,
@@ -120,7 +125,7 @@ add_list([X|Y],S) :-
 	S is X+K,
 	write("S="),write(S), write(" ").
 
-add_list2([X],X).
+add_list2([],).
 add_list2([X|Y],S) :- add_list2(Y,K), S is X+K.
 
 
